@@ -1,0 +1,32 @@
+{
+  "name": "@alker0/cirrus-types",
+  "description": "A type declaration for cirrus.",
+  "version": "0.6.1",
+  "author": "Fujita Hitoshi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alker0/cirrus-types"
+  },
+  "main": "",
+  "types": "dist/cirrus.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ./create-types.js"
+  },
+  "devDependencies": {
+    "postcss": "^7.0.35",
+    "postcss-import-url": "^5.1.0",
+    "postcss-ts-classnames": "^0.3.0"
+  },
+  "peerDependencies": {
+    "cirrus-ui": "0.6.1"
+  },
+  "peerDependenciesMeta": {
+    "cirrus-ui": {
+      "optional": true
+    }
+  }
+}

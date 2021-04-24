@@ -1,0 +1,24 @@
+name: 'Cirrus Types CI'
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+    - run: |
+        yarn install --immutable
+        yarn run build
+        yarn npm publish --access public
+      env:
+        YARN_NPM_PUBLISH_REGISTRY: 'https://npm.pkg.github.com'
+        YARN_NPM_AUTH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    - run: yarn npm publish --access public
+      env:
+        YARN_NPM_PUBLISH_REGISTRY: 'https://registry.npmjs.org'
+        YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
