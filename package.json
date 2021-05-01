@@ -8,6 +8,22 @@
     "type": "git",
     "url": "https://github.com/alker0/cirrus-types"
   },
+  "keywords": [
+    "css",
+    "cirrus",
+    "classes",
+    "classname",
+    "definition",
+    "style",
+    "styles",
+    "ts",
+    "type",
+    "typed",
+    "types",
+    "typing",
+    "typescript",
+    "ui"
+  ],
   "main": "",
   "types": "dist/cirrus.d.ts",
   "files": [
