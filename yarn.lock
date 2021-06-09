@@ -13,7 +13,7 @@ __metadata:
     postcss-import-url: ^5.1.0
     postcss-ts-classnames: ^0.3.0
   peerDependencies:
-    cirrus-ui: 0.6.1
+    cirrus-ui: 0.6.2
   peerDependenciesMeta:
     cirrus-ui:
       optional: true
