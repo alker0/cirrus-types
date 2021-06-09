@@ -1,7 +1,7 @@
 {
   "name": "@alker0/cirrus-types",
   "description": "A type declaration for cirrus.",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "author": "Fujita Hitoshi",
   "license": "MIT",
   "repository": {
