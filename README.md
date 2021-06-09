@@ -6,7 +6,7 @@ This library is a type declaration of CSS class names in [cirrus-ui](https://git
 ## Install
 
 ```bash
-npm install @alker0/cirrus-types
+npm install -D @alker0/cirrus-types
 ```
 
 ## Usage
